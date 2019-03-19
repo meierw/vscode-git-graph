@@ -43,11 +43,12 @@ If you're interested in helping contribute, either:
 * Raise an issue describing the feature you'd like to work on, mentioning that you'd like to implement it. Once reviewed by the code owner, it has been confirmed as a suitable feature of Git Graph and it will be assigned to you to work on.
 
 To set up your development environment, please follow these steps:
-1. Clone the repo
-2. Open the repo in Visual Studio Code
-3. In the terminal, run `npm run install` to download the required dependencies
-4. Install the tslint extension if it is not already installed
-5. Create and checkout a branch for the issue you're going to work on
+1. Install [Node.js](https://nodejs.org/en/)
+2. Clone the repo
+3. Open the repo in Visual Studio Code
+4. In the terminal, run `npm install` to download the required dependencies
+5. Install the [TSlint](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-tslint-plugin) extension if it is not already installed
+6. Create and checkout a branch for the issue you're going to work on
 
 Review the [Codebase Outline](https://github.com/mhutchie/vscode-git-graph/wiki/Codebase-Outline), so you have an understanding of the structure of the code.
 
