@@ -41,7 +41,7 @@ export class CommitAvatar {
         let searchResultJson = '';
         res.on('data', (chunk: Buffer) => { searchResultJson += chunk; });
         res.on('end', () => {
-          let searchResult = JSON.parse(searchResultJson);
+          let searchResult: any = JSON.parse(searchResultJson);
           if (searchResult.length !== 1) {
             resolve(null);
             return;
@@ -54,7 +54,7 @@ export class CommitAvatar {
   }
 
   public static async fromGravatar(email: string, identicon = true): Promise<string | null> {
-    let hash = crypto.createHash('md5').update(email).digest('hex');
+    let hash: string = crypto.createHash('md5').update(email).digest('hex');
     let avatarUrl = 'https://secure.gravatar.com/avatar' +
                     `/${hash}${identicon ? '?d=identicon' : ''}`;
 
